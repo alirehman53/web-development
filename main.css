@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    padding:0;
+    color:white;
+    display:grid;
+    background: rgb(88, 87, 87);;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-template-columns: 1fr;
+   
+
+
+}
+#navbar{
+position:fixed;
+background:black;
+font-size:30px;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr ;
+width:100vw;
+
+}
+.nav-link{
+color:white;
+padding:25px;
+}
+#welcome-section{
+    height:100vh;
+    background:rgb(228, 5, 228);
+}
+#welcome-section1{
+   
+    text-align: center;
+    padding-top:20%;
+    
+}
+#projects{
+    margin:auto;
+   display:grid;
+    grid-template-columns: repeat(2, minmax(60px, 1fr));
+    }
+
+img{
+    width:50vw;
+    height:400px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+@media (max-width:600px){
+    #projects{
+    grid-template-columns: 1fr; }
+
+
+    .project-tile{
+        height:100vh;
+    }
+    img{
+        width:100vw;
+    }
+
+   #navbar{
+    grid-template-columns: 1fr;
+   }
+  
+}
